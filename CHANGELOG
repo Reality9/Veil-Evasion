@@ -1,3 +1,63 @@
+[02.16.2016]
+     Released.: 2.24
+     Added....: I've added obfuscation to the python payloads.  Some AVs are triggering on ctypes being referenced everywhere, at the moment, it's only in the file once.
+     Updated..: Pyinstaller has been updated to version 3.1 which allows us to encrypt the bytecode using the -key option.  The key is randomly generated time a payload is made.
+
+[01.15.2016]
+     Released.: 2.23
+     Info.....: Happy New Years!
+     Added....: Added a perl module for Veil-Evasion.  Working on native compilation in Linux, but if you know how to do it, get in touch with me!
+
+[11.15.2015]
+     Released.: 2.22.2
+     Updated..: Pure go stager payloads now have the correct buffer length for the latest meterpreter dll.  Fixes issue #243
+
+[9.19.2015]
+     Released.: 2.22.1
+     Updated..:  Fixed issue with msfvenom output change and command line usage, updated in pull requests #218 and #219, thanks to gryffus for the patches! 
+
+[9.15.2015]
+     Released.: 2.22.0
+     Added....: Added a Ruby payload which base64 decodes its shellcode at runtime and injects into memory
+
+[07.11.2015]
+     Released.: 2.21.4
+     Updated..: Addressed issue #189, where powershell payloads essentially ignore the compile option since it doesn't apply to them.
+     Updated..: Addressed issue #188, really just expanded upon g0tmilk's PR to give context to the error message.
+
+[7.01.2015]
+     Released.: 2.21.3
+     Fixed....: Fixed a bug in controller so it no longer ignores the "compile_to_exe" option.
+
+[6.27.2015]
+     Released.: 2.21.2
+     Modified.: Removed references to msfpayload throughout veil-evasion
+
+[6.24.2015]
+     Released.: 2.21.1
+     Modified.: RPC server now accepts the pwnstaller and doesn't crash (thanks to PR #171)
+     Updated..: Hyperion was updated to version 1.2, thanks to PR #172
+
+[6.15.2015]
+     Released.: 2.21.0
+     Modified.: June V-Day released! https://www.veil-framework.com/june-2015-v-day/
+
+[6.9.2015]
+     Released.: 2.20.4
+     Modified.: Pure Python stagers are now proxy aware.  Thanks to @meatballs for opening this a long time ago, sorry it took so long :)
+
+[5.31.2015]
+     Released.: 2.20.3
+     Modified.: Finally, the self-contained payload patch is ready, and has been merged.  All contained payloads should now work! :)
+
+[5.30.2015]
+     Released.: 2.20.2
+     Modified.: Only modification here is a small change to the setup script.  If already installed, no new changes.
+
+[5.29.2015]
+     Released.: 2.20.1
+     Modified.: Python payloads now include McAfee bypass... oh antivirus.... avlol :)
+
 [5.19.2015]
      Released.: 2.20
      Added....: This release includes Go payloads being added into the framework!  Veil-Evasion can now compile any go payloads provided to it!  Thanks to @b00stfr3ak for submitting them to us!
